@@ -1,0 +1,68 @@
+.project-container{
+    margin: 3rem 0;
+    position: relative;
+}
+.project-container h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.arrow-right, .arrow-left{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6751b9;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background: #130f2a;
+    position: absolute;
+    top: 55%;
+    z-index:2;
+    cursor: pointer;
+}
+.arrow-left span, .arrow-right span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.arrow-left{
+    left: -0.5rem;
+}
+.arrow-right{
+    right: -0.5rem;
+}
+
+@media screen and (max-width:1025px) {
+    .arrow-left{
+        left: -0.25rem;
+    }
+    .arrow-right{
+        right: -0.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .project-container{
+        margin: 2rem 0;
+    }
+    .project-container h4{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    .arrow-left{
+        left: -0.3rem;
+    }
+    .arrow-right{
+        right: -0.5rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .project-container{
+        margin: 0.8rem 0;
+    }
+    .project-container h4{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}

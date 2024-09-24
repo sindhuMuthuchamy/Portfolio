@@ -1,0 +1,23 @@
+.contact-container{
+    margin: 3rem 0;
+    position: relative;
+}
+.contact-container h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.contact-content{
+    display: flex;
+    gap: 3rem;
+}
+@media screen and (max-width:768px) {
+    .contact-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-container h4{
+        font-size: 1.3rem;
+        margin-bottom: 2 rem;
+    }
+}

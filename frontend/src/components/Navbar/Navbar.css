@@ -1,0 +1,223 @@
+.nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.nav-content li {
+    margin: 0 1.5rem;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item::before {
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.contact-btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+}
+
+.menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none; 
+}
+
+.menu-btn:hover {
+    color: #a993fe;
+    background: #000;
+    border: 1.5px solid #a993fe;
+}
+
+.mobile-menu{
+    /* background-color:  #342864; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+.mobile-menu-container{
+    width: 60vw;
+    height: 100vh;
+    background-color: #342864;
+    padding: 2rem;
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+.mobile-menu-container img {
+    margin-bottom: 1rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    .nav-content ul {
+        display: none; /* Hide desktop menu */
+    }
+    .menu-item {
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .contact-btn {
+        background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .contact-btn:hover {
+        background-color: #a993fe;
+        border: #000 solid 1px;
+    }
+    .mobile-menu{
+        /* background-color:  #342864; */
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        width: 10rem;
+        height: auto;
+    }
+    .nav-content img{
+        width: 20%;
+    }
+    .menu-item {
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .contact-btn {
+        background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .contact-btn:hover {
+        background-color: #a993fe;
+        border: #000 solid 1px;
+    }
+}
+
+@media screen and (max-width: 1325px) {
+    .nav-wrapper {
+        padding: 0 2rem;
+    }
+}
+@media screen and (max-width:375px) {
+    .nav-wrapper{
+        padding: 0 1rem;
+    }
+    .mobile-menu-container img{
+        width: 80%;
+    }
+}
+
