@@ -16,6 +16,9 @@
     align-items: center;
     cursor: pointer;
 }
+.footer-icon a:hover{
+    color: #130f2a;
+}
 
 @media screen and (max-width:425px) {
     .footer-icon{

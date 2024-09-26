@@ -31,11 +31,11 @@
 .technology-card-link ul li{
     list-style: none;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0.3rem;
     position: relative;
     margin-left: 1rem;
-    color: #130f2a;
+    color: white;
     opacity: 1;
 }
 .technology-card-link ul li::after{
@@ -73,7 +73,7 @@
 .website-link {
   display: block;
   margin: 5px 0;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -83,7 +83,8 @@
 .website-link:hover {
   background-color:#24203a ;
   width: max-content; 
-  height: fit-content;/* Highlight the link on hover */
+  height: fit-content;
+  border-radius: 0.65rem;
 }
 
 @media screen and (max-width:1025px) {

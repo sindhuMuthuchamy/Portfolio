@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer'
+import Resume from './components/Resume/Resume';
 
 const App = ()=> {
   return (
@@ -17,6 +18,7 @@ const App = ()=> {
        
        <Skills/>
        <Projects/>
+       <Resume/>
        <ContactMe/>
        <Footer/>
        </div>

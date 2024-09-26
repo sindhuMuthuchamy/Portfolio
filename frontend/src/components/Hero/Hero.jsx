@@ -4,7 +4,6 @@ import './Hero.css'
 const Hero = ()=>{
     return(
     <>
-    {/* <section className='hero'> */}
     <div className='hero-container' id='hero'>
         <div className='hero-content'>
             <h5>I'm</h5>
@@ -47,7 +46,6 @@ const Hero = ()=>{
         </div>
     </div>
       
-    {/* </section> */}
     </>
     )
 }

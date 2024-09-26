@@ -17,7 +17,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://portfolio-project-6yh2.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -25,19 +25,19 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      // Parse JSON response
+      
       const data = await response.json();
-      console.log(data); // Log the response
+      console.log(data); 
 
-      // Check if the response is ok
+    
       if (response.ok) {
         alert(data.message || 'Form submitted successfully!');
       } else {
-        alert(data.error || 'Error submitting form');
+        alert(data.error || 'Network issue, please try after some time');
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Error submitting form');
+      alert('Network issue, please try after some time');
     }
   };
 

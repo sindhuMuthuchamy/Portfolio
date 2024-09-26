@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
-// import { Bars3Icon } from '@heroicons/react/24/solid'
 import { IoClose } from "react-icons/io5";
-import MobileNav from './MobileNav/MobileNav';
 import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
@@ -24,7 +22,7 @@ const Navbar = () => {
             <li><a className="menu-item" href="#skills">Skills</a></li>
             <li><a className="menu-item" href="#project">Project</a></li>
             <li><a className="menu-item" href="#contact">Contact Me</a></li>
-            <button className="contact-btn">Hire Me</button>
+            <button className="contact-btn"><a href='#contact'>Hire Me</a></button>
           </ul>
           <button onClick={handleToggle} className="block md:hidden ml-2 pl-1 menu-btn">
                 <span>{toggleMenu ? <IoClose className='text-white h-8 w-8'/> : <FiMenu className='text-white h-8 w-8' />}</span>
@@ -40,8 +38,8 @@ const Navbar = () => {
                     <li><a className='menu-item' href="/">Home</a></li>
                     <li><a  className='menu-item' href="#about">Skills</a></li>
                     <li><a className='menu-item' href="#project">Project</a></li>
-                    <li><a className='menu-item' href="#resume">Contact Me</a></li>
-                    <button className="contact-btn">Hire Me</button>
+                    <li><a className='menu-item' href="#contact">Contact Me</a></li>
+                    <button className="contact-btn"><a href='#contact'>Hire Me</a></button>
                 </ul>
                 </div>
             </nav>}

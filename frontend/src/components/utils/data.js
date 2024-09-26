@@ -11,11 +11,12 @@ const getSkills = () => [
         ]
     },
     {
-        title: "Backend",
+        title: "Backend & DB",
         icon: "./assets/images/backend-icon.png",
         skills: [
             { skill: "Node.js", percentage: "60%" },
-            { skill: "Express.js", percentage: "65%" }
+            { skill: "Express.js", percentage: "65%" },
+            { skill: "Mongo DB" , percentage: "60%"}
         ]
     },
     {
@@ -35,7 +36,8 @@ const getSkills = () => [
             { skill: "Attention to Details", percentage: "80%" },
             { skill: "Problem-solving", percentage: "60%" }
         ]
-    }
+    },
+    
 ];
 
 export default getSkills

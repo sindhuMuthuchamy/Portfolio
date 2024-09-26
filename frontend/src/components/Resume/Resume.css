@@ -1,0 +1,130 @@
+.resume h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 3rem ;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(22,17,47,0.398);
+    backdrop-filter: blur(1rem);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.resume-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume-content h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.resume-image{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2a2252;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6852ba;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+}
+.resume-image img{
+    width: 2.4rem;
+    height: auto;
+    object-fit: contain;
+}
+.btn {
+    width: 6rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+}
+
+@media screen and (max-width:1025px) {
+    .resume h1{
+        font-size: 1.2rem;
+    }
+    .resume-container{
+        padding: 2rem;
+    }
+    .resume-content h1{
+        font-size: 1rem;
+    }
+    .resume-image{
+        width: 3rem;
+        height: 3rem;
+    }
+    .resume-image img{
+        width: 1.8rem;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .resume h1{
+        font-size: 1.2rem;
+    }
+    .resume-content h1{
+        font-size: 1rem;
+        
+    }
+    .resume-content p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .resume h1{
+        font-size: 1rem;
+    }
+    .resume-container{
+        padding: 1rem;
+    }
+    .resume-content h1{
+        font-size: 0.9rem;
+    }
+    .resume-content p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .resume h1{
+        font-size: 0.9rem;
+    }
+    .resume-content h1{
+        font-size: 0.7rem;
+    }
+    .resume-content p{
+        font-size: 0.6rem;
+    }
+}

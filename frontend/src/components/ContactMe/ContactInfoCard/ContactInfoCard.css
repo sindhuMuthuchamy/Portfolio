@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
-    background: #3d3072;
+    background: linear-gradient(90deg , #46387a 0% , #6454a1 100%);
     margin-bottom: 0.8rem;
 }
 .icon img{

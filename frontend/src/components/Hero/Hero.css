@@ -192,7 +192,7 @@
 }
 @media screen and (max-width:425px) {
     .hero-content h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     } 
     .hero-container h5{

@@ -16,9 +16,9 @@ const ContactMe = () => {
         <div className="contact-content">
             <div style={{flex: 1}}>
                 <ContactInfoCard iconUrl={'./assets/images/mail-icon.png'}
-                text={'sindhumuthuchamy@gmail.com'}/>
+                text={'sindhu@gmail.com'}/>
                 <ContactInfoCard iconUrl={'./assets/images/phone-icon.png'}
-                text={'+91 8778265394'}/>
+                text={'+91 8778200000'}/>
                 </div>
             <div style={{flex: 1}}>
                 <ContactForm/>
